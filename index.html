@@ -1467,7 +1467,6 @@
     <div class="answer-content">回答内容が設定されていません</div>
     <div class="answer-links">
       <button onclick="openImageModal('images/1102.png')" class="answer-link">📷 参考手順</button>
-      <a href="https://paypay.ne.jp/" target="_blank" class="answer-link">🔗 PayPay公式サイト</a>
     </div>
   </div>
 </div><div class="faq-item" data-category="全般・各種設定・ポイント">
@@ -2689,4 +2688,8 @@
 
         window.addEventListener("load", function() {
             const firstTab = document.querySelector(".tab");
-            if (firstTab)
+            if (firstTab) filterFAQ(firstTab.textContent.trim(), firstTab);
+        });
+    </script>
+</body>
+</html>
